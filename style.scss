@@ -25,3 +25,18 @@ a {
   color: initial;
   text-decoration: none;
 }
+
+#boczny {
+  //slider z boku
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: -200px;
+  border: 1px solid red;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  &.open {
+    right: 0px;
+  }
+}
